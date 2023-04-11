@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_300"
+    tools:context=".ui.introduction.fragment.LanguageOptionFragment">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/introduction_question_1"
+        android:textSize="28sp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_question"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginHorizontal="29dp"
+        app:layout_constraintStart_toStartOf="@id/tv_question"
+        app:layout_constraintEnd_toEndOf="@id/tv_question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/language_option_item"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

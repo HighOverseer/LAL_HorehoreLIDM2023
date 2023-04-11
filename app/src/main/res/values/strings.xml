@@ -9,11 +9,36 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="introduction_question_1">Bahasa apa yang suka kamu pelajari?</string>
+    <string name="introduction_question_2">Seberapa jauh pengetahuanmu mengenai bahasa ini?</string>
+    <string name="introduction_experience_answer_1">Saya baru pemula</string>
+    <string name="introduction_experience_answer_2">Saya memahami\nsedikit</string>
+    <string name="introduction_experience_answer_3">Saya bisa diskusi ringan</string>
+    <string name="introduction_experience_answer_4">Saya terampil</string>
+    <string name="introduction_experience_answer_5">Saya sudah fasih</string>
+    <string name="home">Home</string>
+    <string name="pembelajaran">Pembelajaran</string>
+    <string name="forum_diskusi">Forum Diskusi</string>
+    <string name="chat">Chat</string>
+    <string name="hint_search_view">Cari diskusi topik, pelajaran disini...</string>
+    <string name="diskusi_terpilih">Diskusi Terpilih</string>
+    <string name="register_hint_username">Nama Pengguna</string>
+    <string name="register_hint_email">Email Pengguna</string>
+    <string name="register_hint_password">Password</string>
+    <string name="register_hint_confirm_password">Konfirmasi Password</string>
+    <string name="register_create_account">Buat Akun</string>
+    <string name="register_label_has_account">Sudah memiliki akun?</string>
+    <string name="register_to_login">Klik disini</string>
+    <string name="register_title">Buat Akun</string>
+
     <string name="tugasharian_text_todaytask">Tugas hari ini</string>
     <string name="tugasharian_text_angharusdilakukan">Yang Harus Kamu Lakukan</string>
     <string name="tugasharian_text_introduction">Perkenalkan dirimu</string>
     <string name="tugasharian_text_writing">Menulis</string>
     <string name="tugasharian_text_speaking">Berbicara</string>
     <string name="dashboard_text_learningprogress">Progress Belajar Kamu</string>
+    <string name="learning_title">Pembelajaran</string>
     <string name="dashboard_text_dailytask">Tugas Harian</string>
 </resources>
