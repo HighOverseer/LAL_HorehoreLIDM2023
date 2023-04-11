@@ -1,6 +1,6 @@
 package com.example.horehorelidm.data
 
-import com.example.horehorelidm.data.model.LoggedInUser
+import com.example.horehorelidm.data.models.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and

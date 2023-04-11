@@ -9,5 +9,12 @@
     <color name="light_gray">#BECEDA</color>
     <color name="black">#1D2429</color>
     <color name="white">#FFFFFFFF</color>
-
+    
+    <color name="blue_300">#5CB0C8</color>
+    <color name="solid_black">#201F26</color>
+    <color name="black_200">#063639</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_200">#F6F6F6</color>
+    <color name="grey">#8B899B</color>
+    <color name="dark_blue">#434654</color>
 </resources>
