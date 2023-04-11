@@ -1,6 +1,6 @@
 package com.example.horehorelidm.data
 
-import com.example.horehorelidm.data.model.LoggedInUser
+import com.example.horehorelidm.data.models.LoggedInUser
 import java.io.IOException
 
 /**

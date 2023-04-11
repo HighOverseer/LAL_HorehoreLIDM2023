@@ -1,4 +1,4 @@
-package com.example.horehorelidm.data.model
+package com.example.horehorelidm.data.models
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository
