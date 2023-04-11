@@ -107,9 +107,10 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/teal_900"
+        android:backgroundTint="#F89236"
         android:text="Buat Akun"
         android:textSize="16sp"
+        android:fontFamily="@font/inter_bold"
         app:layout_constraintTop_toBottomOf="@+id/register_confirm_password" />
 
     <LinearLayout
