@@ -18,9 +18,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#063639"
+        android:backgroundTint="#F89236"
         android:text="Masuk"
         android:textSize="16sp"
+        android:fontFamily="@font/inter_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
