@@ -32,4 +32,13 @@
     <string name="register_label_has_account">Sudah memiliki akun?</string>
     <string name="register_to_login">Klik disini</string>
     <string name="register_title">Buat Akun</string>
+
+    <string name="tugasharian_text_todaytask">Tugas hari ini</string>
+    <string name="tugasharian_text_angharusdilakukan">Yang Harus Kamu Lakukan</string>
+    <string name="tugasharian_text_introduction">Perkenalkan dirimu</string>
+    <string name="tugasharian_text_writing">Menulis</string>
+    <string name="tugasharian_text_speaking">Berbicara</string>
+    <string name="dashboard_text_learningprogress">Progress Belajar Kamu</string>
+    <string name="learning_title">Pembelajaran</string>
+    <string name="dashboard_text_dailytask">Tugas Harian</string>
 </resources>

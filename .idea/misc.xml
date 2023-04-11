@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/drawable/custom_progress_bar.xml" value="0.365" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/drawable/footer_biru.xml" value="0.365" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/drawable/logo.xml" value="0.1045" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/drawable/logolal.xml" value="0.1045" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.10625" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/layout-w936dp/activity_login.xml" value="0.13389441469013008" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/layout/activity_login.xml" value="0.1773049645390071" />
+        <entry key="..\:/cococo/HorehoreLIDM/app/src/main/res/layout/activity_splashscreen.xml" value="0.67" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
