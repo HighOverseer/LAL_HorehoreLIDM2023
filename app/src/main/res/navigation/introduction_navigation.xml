@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/introduction_navigtion"
+    app:startDestination="@id/languageOptionFragment">
+
+    <fragment
+        android:id="@+id/languageOptionFragment"
+        android:name="com.example.horehorelidm.ui.introduction.fragment.LanguageOptionFragment"
+        android:label="fragment_language_option"
+        tools:layout="@layout/fragment_language_option" >
+        <action
+            android:id="@+id/action_languageOptionFragment_to_experienceFragment"
+            app:destination="@id/experienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.example.horehorelidm.ui.introduction.fragment.ExperienceFragment"
+        android:label="fragment_experience"
+        tools:layout="@layout/fragment_experience" />
+</navigation>
