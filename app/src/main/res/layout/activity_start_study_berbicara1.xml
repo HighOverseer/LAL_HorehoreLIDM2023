@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
+        app:srcCompat="@drawable/baseline_arrow_back_24_black" />
 
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/progressBar"
@@ -92,43 +92,25 @@
             android:layout_height="100dp"
             android:layout_gravity="bottom"
             android:orientation="horizontal"
-            android:padding="0dp"
-            android:translationX="45dp">
+            android:translationX="40dp">
 
-            <androidx.cardview.widget.CardView
+            <ImageButton
+                android:id="@+id/volumeImageButton"
                 android:layout_width="142dp"
                 android:layout_height="53dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:backgroundTint="#F89236"
-                app:cardCornerRadius="10dp">
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@drawable/round_corner"/>
 
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="6dp"
-                    app:srcCompat="@drawable/baseline_volume_up_24" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <ImageButton
+                android:id="@+id/searchImageButton"
                 android:layout_width="142dp"
                 android:layout_height="53dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:elevation="10dp"
-                app:cardCornerRadius="10dp"
-                android:backgroundTint="#00000000"
-                app:strokeColor="#F89236">
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerInParent="true"
-                    android:padding="6dp"
-                    app:srcCompat="@drawable/baseline_mic_24" />
-            </androidx.cardview.widget.CardView>
+                android:src="@drawable/baseline_mic_24"
+                android:background="@drawable/stroke_button"/>
 
         </LinearLayout>
 
