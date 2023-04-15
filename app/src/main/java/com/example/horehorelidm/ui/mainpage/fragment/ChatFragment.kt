@@ -1,38 +1,33 @@
 package com.example.horehorelidm.ui.mainpage.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.horehorelidm.ui.mainpage.models.Discussion
-import com.example.horehorelidm.databinding.FragmentForumDiskusiBinding
-import com.example.horehorelidm.ui.mainpage.adapter.SelectedDiscussionAdapter
+import com.example.horehorelidm.databinding.FragmentChatBinding
+import com.example.horehorelidm.ui.mainpage.adapter.ChatAdapter
 import com.example.horehorelidm.ui.mainpage.data.mainpageDummies
+import com.example.horehorelidm.ui.mainpage.models.Chat
 
-
-class ForumDiskusiFragment : Fragment() {
-
-    private var _binding:FragmentForumDiskusiBinding?=null
-    private val binding:FragmentForumDiskusiBinding get() = _binding!!
+class ChatFragment:Fragment() {
+    private var _binding:FragmentChatBinding?=null
+    private val binding get()=_binding!!
     private val adapter = getAdapter()
-
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View{
-        _binding = FragmentForumDiskusiBinding.inflate(inflater, container, false)
+    ): View {
+        _binding = FragmentChatBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        setAdapter()
-
-
+        setLayout()
     }
 
     override fun onDestroy() {
@@ -40,7 +35,7 @@ class ForumDiskusiFragment : Fragment() {
         _binding = null
     }
 
-    private fun setAdapter(){
+    private fun setLayout(){
         binding.apply {
             recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -48,9 +43,9 @@ class ForumDiskusiFragment : Fragment() {
         }
     }
 
-    private fun getAdapter():SelectedDiscussionAdapter{
-        return SelectedDiscussionAdapter(mainpageDummies.getSelectedDiscussionsData(), object : SelectedDiscussionAdapter.OnItemClicked{
-            override fun onClick(discussion: Discussion) {
+    private fun getAdapter():ChatAdapter{
+        return ChatAdapter(mainpageDummies.getChatListData(), object : ChatAdapter.OnItemClicked{
+            override fun onClick(chat: Chat) {
 
             }
         })

@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="24dp"
-    android:background="@color/white"
+    android:background="@color/white_200"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/civ_profile_pict"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/foto"
@@ -20,45 +19,46 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tv_topic"
+        android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="24dp"
         android:ellipsize="end"
         android:fontFamily="@font/inter_medium"
         android:text="Fadli"
         android:textColor="@color/solid_black"
-        android:textSize="16sp"
+        android:textSize="13sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="48dp"
         app:layout_constraintStart_toEndOf="@id/civ_profile_pict"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_thread_starter"
+        android:id="@+id/tv_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/inter_bold"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/inter_medium"
         android:text="Besok kita jadi belajar bareng?"
         android:textColor="@color/solid_black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/tv_time"
         app:layout_constraintStart_toEndOf="@id/civ_profile_pict"
-        app:layout_constraintTop_toBottomOf="@id/tv_topic" />
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="24dp"
-        android:fontFamily="@font/inter_bold"
+        android:fontFamily="@font/inter_medium"
         android:text="17.00"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

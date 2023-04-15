@@ -1,4 +1,4 @@
-package com.example.horehorelidm.data.models
+package com.example.horehorelidm.ui.introduction.models
 
 data class Language(
     val icFlag:Int,

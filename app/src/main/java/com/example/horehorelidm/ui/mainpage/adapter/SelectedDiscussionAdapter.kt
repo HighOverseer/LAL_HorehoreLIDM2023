@@ -5,7 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.horehorelidm.data.models.Discussion
+import com.example.horehorelidm.R
+import com.example.horehorelidm.ui.mainpage.models.Discussion
 import com.example.horehorelidm.databinding.SelectedDiscussionItemBinding
 import de.hdodenhof.circleimageview.CircleImageView
 
@@ -37,7 +38,7 @@ class SelectedDiscussionAdapter(private val discussions:List<Discussion>, privat
         holder.binding.apply {
             civProfilePict.loadImage(holder.itemView.context, currentItem.threadStarterProfilePic)
             tvTopic.text = currentItem.topic
-            tvThreadStarter.text = currentItem.threadStarterName
+            tvThreadStarter.text = holder.itemView.context.getString(R.string.ditanya_oleh, currentItem.threadStarterName)
             tvFirstTag.text = currentItem.tags[0]
 
         }
@@ -52,6 +53,6 @@ class SelectedDiscussionAdapter(private val discussions:List<Discussion>, privat
     }
 
     interface OnItemClicked{
-        fun onClick(discussion:Discussion)
+        fun onClick(discussion: Discussion)
     }
 }

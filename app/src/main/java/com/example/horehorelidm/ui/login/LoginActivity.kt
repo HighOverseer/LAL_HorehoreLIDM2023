@@ -1,6 +1,7 @@
 package com.example.horehorelidm.ui.login
 
 import android.app.Activity
+import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -15,6 +16,8 @@ import android.widget.Toast
 import com.example.horehorelidm.databinding.ActivityLoginBinding
 
 import com.example.horehorelidm.R
+import com.example.horehorelidm.ui.introduction.IntroductionActivity
+import com.example.horehorelidm.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,13 +30,16 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+/*
         val username = binding.username
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+*/
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
+/*
 
         loginViewModel.loginFormState.observe(this@LoginActivity, Observer {
             val loginState = it ?: return@Observer
@@ -48,6 +54,8 @@ class LoginActivity : AppCompatActivity() {
                 password?.error = getString(loginState.passwordError)
             }
         })
+*//*
+
 
         loginViewModel.loginResult.observe(this@LoginActivity, Observer {
             val loginResult = it ?: return@Observer
@@ -95,6 +103,18 @@ class LoginActivity : AppCompatActivity() {
                 loading.visibility = View.VISIBLE
                 loginViewModel.login(username?.text.toString(), password?.text.toString())
             }
+        }
+
+*/
+        binding.tvToRegister?.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.filledButton?.setOnClickListener {
+            val intent = Intent(this@LoginActivity, IntroductionActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 

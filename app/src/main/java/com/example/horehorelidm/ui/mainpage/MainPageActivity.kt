@@ -1,9 +1,7 @@
 package com.example.horehorelidm.ui.mainpage
 
-import android.graphics.drawable.PaintDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.res.ResourcesCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.horehorelidm.R

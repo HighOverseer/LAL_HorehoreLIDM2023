@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.horehorelidm.R
-import com.example.horehorelidm.data.models.Language
+import com.example.horehorelidm.ui.introduction.models.Language
 import com.example.horehorelidm.databinding.FragmentLanguageOptionBinding
 import com.example.horehorelidm.ui.introduction.adapter.LanguageOptionsAdapter
-import com.example.horehorelidm.ui.introduction.data.data
+import com.example.horehorelidm.ui.introduction.data.introductionDummies
 
 
 class LanguageOptionFragment : Fragment() {
@@ -50,7 +50,7 @@ class LanguageOptionFragment : Fragment() {
     }
 
     private fun getAdapter(): LanguageOptionsAdapter {
-        return LanguageOptionsAdapter(data.getLanguageOptionsData(), object:LanguageOptionsAdapter.OnItemClicked{
+        return LanguageOptionsAdapter(introductionDummies.getLanguageOptionsData(), object:LanguageOptionsAdapter.OnItemClicked{
             override fun onClick(language: Language) {
                 view?.findNavController()?.navigate(R.id.action_languageOptionFragment_to_experienceFragment)
             }

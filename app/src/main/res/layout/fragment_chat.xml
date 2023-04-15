@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F6F6"
+    android:background="@color/white_200"
     android:paddingHorizontal="24dp">
 
     <LinearLayout
@@ -33,9 +33,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:scaleX="1.3"
-            android:scaleY="1.3"
-            app:srcCompat="@drawable/baseline_search_24" />
+
+            app:srcCompat="@drawable/ic_search_bar" />
 
 
         <ImageView
@@ -45,37 +44,41 @@
             android:layout_margin="10dp"
             android:scaleX="1.3"
             android:scaleY="1.3"
-            app:srcCompat="@drawable/baseline_people_24" />
+            app:srcCompat="@drawable/ic_list_friend" />
 
     </LinearLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinatorLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="387dp"
-        tools:layout_editor_absoluteY="24dp">
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floating_action_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
-            app:backgroundTint="#F89236"
-            app:srcCompat="@drawable/baseline_chat_24"
-            app:tint="#fff" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
         tools:listitem="@layout/selected_chat_item" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="#F89236"
+        app:srcCompat="@drawable/ic_chat"
+        app:tint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+

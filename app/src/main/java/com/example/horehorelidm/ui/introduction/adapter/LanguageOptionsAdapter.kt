@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.horehorelidm.data.models.Language
+import com.example.horehorelidm.ui.introduction.models.Language
 import com.example.horehorelidm.databinding.LanguageOptionItemBinding
 
 class LanguageOptionsAdapter(

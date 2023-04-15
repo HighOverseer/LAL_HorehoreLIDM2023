@@ -1,4 +1,4 @@
-package com.example.horehorelidm.data.models
+package com.example.horehorelidm.ui.mainpage.models
 
 data class Discussion(
     val threadStarterName:String,

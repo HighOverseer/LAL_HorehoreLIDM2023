@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    tools:context=".ui.learning.fragments.LearningFragment">
+    android:background="@color/white_200"
+    tools:context=".ui.mainpage.fragment.LearningFragment">
 
     <TextView
         android:id="@+id/learning_title"
@@ -28,7 +29,11 @@
         <AutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none" />
+            android:inputType="none"
+            android:text="Bahasa Inggris"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_bold"
+            android:drawableStart="@drawable/gb"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,11 +59,12 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="24dp">
+                android:paddingVertical="16dp">
 
                 <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="90dp"
+                    android:layout_height="85dp"
+                    android:layout_marginStart="4dp"
                     android:src="@drawable/gb" />
 
                 <LinearLayout
@@ -73,6 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bahasa Inggris Dasar"
+                        android:textSize="18sp"
                         android:textColor="@color/white" />
 
                     <TextView
@@ -84,10 +91,19 @@
                         android:text="4/14"
                         android:textColor="@color/white" />
 
-                    <com.google.android.material.progressindicator.LinearProgressIndicator
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:trackThickness="8dp" />
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="171dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="4dp"
+                        android:scaleY="0.7"
+                        android:max="14"
+                        android:progress="4"
+                        android:progressDrawable="@drawable/custom_progress_bar_learning"
+                        app:layout_constraintStart_toStartOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -96,11 +112,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@color/light_gray"
+                android:background="@drawable/locked_learning_objective_bg"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="24dp">
+                android:paddingVertical="18dp">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -131,6 +147,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Percakapan Dasar"
+                        android:textSize="18sp"
                         android:textColor="@color/gray" />
 
                     <TextView
@@ -159,11 +176,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@color/light_gray"
+                android:background="@drawable/locked_learning_objective_bg"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingHorizontal="16dp"
-                android:paddingVertical="24dp">
+                android:paddingVertical="20dp">
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -193,6 +210,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Grammar Dasar Bagian 1"
                         android:textColor="@color/gray" />
 

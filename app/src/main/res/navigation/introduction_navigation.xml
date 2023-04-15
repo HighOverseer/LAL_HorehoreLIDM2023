@@ -18,5 +18,14 @@
         android:id="@+id/experienceFragment"
         android:name="com.example.horehorelidm.ui.introduction.fragment.ExperienceFragment"
         android:label="fragment_experience"
-        tools:layout="@layout/fragment_experience" />
+        tools:layout="@layout/fragment_experience" >
+        <action
+            android:id="@+id/action_experienceFragment_to_mainpageActivity"
+            app:destination="@id/mainpageActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mainpageActivity"
+        android:name="com.example.horehorelidm.ui.mainpage.MainPageActivity"
+        tools:layout="@layout/activity_main_page"/>
 </navigation>

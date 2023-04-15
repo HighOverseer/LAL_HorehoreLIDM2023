@@ -41,4 +41,6 @@
     <string name="dashboard_text_learningprogress">Progress Belajar Kamu</string>
     <string name="learning_title">Pembelajaran</string>
     <string name="dashboard_text_dailytask">Tugas Harian</string>
+    <string name="edit">Edit</string>
+    <string name="ditanya_oleh">ditanya oleh: %1$s</string>
 </resources>

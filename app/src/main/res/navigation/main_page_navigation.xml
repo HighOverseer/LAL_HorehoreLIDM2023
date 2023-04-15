@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_page_navigation"
-    app:startDestination="@id/menu_forum_diskusi">
+    app:startDestination="@id/menu_home">
 
-  <!--  <fragment
+  <fragment
         android:id="@+id/menu_home"
         android:name="com.example.horehorelidm.ui.mainpage.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/menu_pembelajaran"
-        android:name="com.example.horehorelidm.ui.mainpage.fragment.PembelajaranFragment"
+        android:name="com.example.horehorelidm.ui.mainpage.fragment.LearningFragment"
         android:label="fragment_pembelajaran"
-        tools:layout="@layout/fragment_pembelajaran" />-->
+        tools:layout="@layout/fragment_learning" />
     <fragment
         android:id="@+id/menu_forum_diskusi"
         android:name="com.example.horehorelidm.ui.mainpage.fragment.ForumDiskusiFragment"
         android:label="fragment_forum_diskusi"
         tools:layout="@layout/fragment_forum_diskusi" />
-    <!--<fragment
+   <fragment
         android:id="@+id/menu_chat"
         android:name="com.example.horehorelidm.ui.mainpage.fragment.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" />-->
+        tools:layout="@layout/fragment_chat" />
 </navigation>

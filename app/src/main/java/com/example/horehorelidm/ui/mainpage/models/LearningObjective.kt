@@ -1,4 +1,4 @@
-package com.example.horehorelidm.ui.learning.models
+package com.example.horehorelidm.ui.mainpage.models
 
 data class LearningObjective(
     val idLanguage: String,
